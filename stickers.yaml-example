@@ -1,0 +1,19 @@
+domain: workspace-domain.com
+impersonate: admin-or-service-account@workspace-domain.com
+
+labels:
+  - name: '[External]'
+    color:
+      backgroundcolor: '#f691b2'
+      textcolor: '#994a64'
+
+  - name: '[Retain]'
+    color:
+      backgroundcolor: '#e07798'
+      textcolor: '#ffffff'
+
+filters:
+  - label: '[External]'
+    query:
+      not_from:
+        - workspace-domain.com

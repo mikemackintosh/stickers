@@ -1,0 +1,11 @@
+runtime: go114
+main: ./
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
+
+env_variables:
+    STICKERS_SVCACCT_JSON: service-account.json
+    STICKERS_CONFIG: stickers.yaml
